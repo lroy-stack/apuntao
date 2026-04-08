@@ -24,7 +24,7 @@
       <p class="subtitle">Un asistente configurado a medida para tu restaurante, beach club u hotel. Gestiona reservas, responde al instante y atiende clientes desde WhatsApp y Telegram, las 24 horas.</p>
       <div class="hero-actions">
         <a href="#como-funciona" class="btn-primary">Ver como funciona</a>
-        <button id="start-onboarding-btn" class="btn-secondary">Empieza tu Onboarding</button>
+        <a href="#contacto" class="btn-secondary">Hablar con Leroy</a>
       </div>
       <div class="hero-proof">
         <span>⚡ Funcionando en 48h</span>
@@ -37,54 +37,19 @@
         <div class="chat-header">
           <div class="chat-avatar">R</div>
           <div>
-            <div class="chat-name">Asistente Apuntao</div>
+            <div class="chat-name">Restaurante Can Pep</div>
             <div class="chat-status">
-              <span class="dot"></span> Activo
+              <span class="dot"></span> Asistente activo
             </div>
           </div>
         </div>
         <div class="chat-messages" id="chatMessages">
-          <!-- Chat messages will be dynamically added here by JS -->
-        </div>
-        <div class="chat-input visible" id="chatInputArea">
-            <input type="text" id="chatInput" placeholder="Pregunta algo al asistente...">
-            <button id="sendChatBtn">Enviar</button>
+          <!-- filled by JS -->
         </div>
       </div>
       <div class="chat-badge">Responde en segundos. Siempre.</div>
     </div>
   </section>
-
-  <!-- ONBOARDING MODAL -->
-  <div id="onboardingModal" class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2>Empecemos tu Onboarding</h2>
-      <div id="onboarding-chat" class="onboarding-chat">
-        <!-- Onboarding chat messages -->
-      </div>
-      <div class="onboarding-input" id="onboardingInputArea">
-        <input type="text" id="onboardingInput" placeholder="Escribe tu respuesta...">
-        <button id="sendOnboardingBtn">Enviar</button>
-      </div>
-      <form id="onboardingForm" class="hidden">
-        <h3>¡Casi listo! Envíanos tus datos:</h3>
-        <label for="form-name">Nombre:</label>
-        <input type="text" id="form-name" name="name" required>
-
-        <label for="form-email">Email:</label>
-        <input type="email" id="form-email" name="email" required>
-
-        <label for="form-business">Tipo de negocio (ej: restaurante, beach club):</label>
-        <input type="text" id="form-business" name="business_type" required>
-
-        <label for="form-needs">¿Qué necesitas automatizar?</label>
-        <textarea id="form-needs" name="automation_needs" rows="4" required></textarea>
-
-        <button type="submit" class="btn-primary">Enviar Onboarding</button>
-      </form>
-    </div>
-  </div>
 
   <!-- PARA QUIEN -->
   <section class="para-quien" id="para-quien">
@@ -194,7 +159,7 @@
       <h2 data-animate>Hablamos?</h2>
       <p data-animate>Escribeme directamente. Sin formularios, sin comerciales. Si tu negocio encaja con lo que hago, lo sabremos en diez minutos.</p>
       <div class="contacto-opciones" data-animate>
-        <a href="mailto:con' + 'tacto@lr0y.dev" class="contacto-btn email">contacto@lr0y.dev</a>
+        <a href="mailto:contacto@lr0y.dev" class="contacto-btn email">contacto@lr0y.dev</a>
         <a href="https://wa.me/4915292606770" class="contacto-btn whatsapp">📱 WhatsApp</a>
       </div>
       <p class="contacto-nota" data-animate>Estoy en Mallorca. Puedo pasarme a hacer una demo en persona.</p>
