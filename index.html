@@ -3,126 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apuntao - Tu asistente para la hosteleria</title>
-  <meta name="description" content="Asistentes de IA personalizados para hostelerias y negocios en Mallorca. Gestiona reservas, atiende clientes y controla tu negocio desde WhatsApp.">
+  <title>Apuntao - Tu asistente de IA para la hosteleria</title>
+  <meta name="description" content="Asistentes de IA personalizados para hosteleria y negocios en Mallorca. Gestiona reservas, atiende clientes y controla tu negocio desde WhatsApp.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav>
+  <nav id="navbar">
     <div class="logo">apuntao<span>.</span></div>
     <a href="#contacto" class="btn-nav">Hablar con Leroy</a>
   </nav>
 
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
+    <div class="hero-content" data-animate>
       <span class="tag">Mallorca · Hosteleria · IA</span>
       <h1>Tu negocio, atendido.<br>Incluso cuando no estas.</h1>
-      <p class="subtitle">Un asistente configurado a medida para tu restaurante, beach club o hotel. Gestiona reservas, responde preguntas y atiende a tus clientes desde WhatsApp y Telegram, las 24 horas.</p>
+      <p class="subtitle">Un asistente configurado a medida para tu restaurante, beach club u hotel. Gestiona reservas, responde al instante y atiende clientes desde WhatsApp y Telegram, las 24 horas.</p>
       <div class="hero-actions">
         <a href="#como-funciona" class="btn-primary">Ver como funciona</a>
         <a href="#contacto" class="btn-secondary">Hablar con Leroy</a>
       </div>
       <div class="hero-proof">
-        <span>Funcionando en 48h</span>
-        <span>Sin tecnicismos</span>
-        <span>Soporte incluido</span>
+        <span>⚡ Funcionando en 48h</span>
+        <span>📱 WhatsApp + Telegram</span>
+        <span>🛠️ Soporte incluido</span>
       </div>
     </div>
-    <div class="hero-visual">
+    <div class="hero-visual" data-animate data-delay="200">
       <div class="chat-mock">
         <div class="chat-header">
           <div class="chat-avatar">R</div>
           <div>
             <div class="chat-name">Restaurante Can Pep</div>
-            <div class="chat-status">Asistente activo</div>
+            <div class="chat-status">
+              <span class="dot"></span> Asistente activo
+            </div>
           </div>
         </div>
-        <div class="chat-messages">
-          <div class="msg incoming">Hola, teneis mesa para 4 el viernes a las 9?</div>
-          <div class="msg outgoing">Hola! Si, tenemos disponibilidad el viernes 11 a las 21:00. Te la reservo a nombre de quien?</div>
-          <div class="msg incoming">A nombre de Maria, gracias!</div>
-          <div class="msg outgoing">Perfecto Maria. Reserva confirmada para 4 personas el viernes 11 a las 21:00. Te enviamos confirmacion por aqui. Hasta el viernes!</div>
-          <div class="msg time">Respondido en 3 segundos · 2:47 AM</div>
+        <div class="chat-messages" id="chatMessages">
+          <!-- filled by JS -->
         </div>
       </div>
+      <div class="chat-badge">Responde en segundos. Siempre.</div>
     </div>
   </section>
 
+  <!-- PARA QUIEN -->
   <section class="para-quien" id="para-quien">
     <div class="container">
-      <h2>Para quien es Apuntao</h2>
+      <h2 data-animate>Para quien es Apuntao</h2>
       <div class="cards">
-        <div class="card">
+        <div class="card" data-animate data-delay="0">
           <div class="card-icon">🏖️</div>
           <h3>Beach bars y chiringuitos</h3>
           <p>Reservas de mesas y hamacas, carta del dia, horarios. Todo gestionado mientras estas en el servicio.</p>
         </div>
-        <div class="card">
+        <div class="card" data-animate data-delay="100">
           <div class="card-icon">🍽️</div>
           <h3>Restaurantes independientes</h3>
-          <p>El asistente conoce tu carta, tus alergenos, tus precios y como llegar. Responde en espanol, ingles y aleman.</p>
+          <p>Conoce tu carta, tus alergenos y tus precios. Responde en espanol, ingles, aleman y frances.</p>
         </div>
-        <div class="card">
+        <div class="card" data-animate data-delay="200">
           <div class="card-icon">🏨</div>
           <h3>Hoteles boutique y fincas</h3>
-          <p>Atiende a los huespedes antes, durante y despues de la estancia. Peticiones, recomendaciones, reservas de spa.</p>
+          <p>Atiende a huespedes antes, durante y despues de la estancia. Peticiones, recomendaciones, spa.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- COMO FUNCIONA -->
   <section class="como-funciona" id="como-funciona">
     <div class="container">
-      <h2>Como funciona</h2>
+      <h2 data-animate>Como funciona</h2>
       <div class="steps">
-        <div class="step">
+        <div class="step" data-animate data-delay="0">
           <div class="step-num">01</div>
           <h3>Hablamos</h3>
-          <p>Me cuentas como funciona tu negocio, que necesitas gestionar y que tono quieres que tenga el asistente.</p>
+          <p>Me cuentas como funciona tu negocio, que necesitas automatizar y que tono quieres que tenga el asistente.</p>
         </div>
-        <div class="step">
+        <div class="step" data-animate data-delay="150">
           <div class="step-num">02</div>
           <h3>Lo configuro</h3>
-          <p>En 48 horas tengo el asistente funcionando: conoce tu carta, tus horarios, tu politica de reservas. Habla como tu.</p>
+          <p>En 48 horas el asistente esta funcionando: conoce tu carta, tus horarios, tu politica de reservas. Habla como tu.</p>
         </div>
-        <div class="step">
+        <div class="step" data-animate data-delay="300">
           <div class="step-num">03</div>
           <h3>Tu equipo descansa</h3>
-          <p>El asistente gestiona lo rutinario. Solo te llega lo que necesita tu atencion real. El resto lo resuelve solo.</p>
+          <p>El asistente gestiona lo rutinario. Solo te llega lo que necesita tu atencion real.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- QUE GESTIONA -->
   <section class="que-gestiona">
     <div class="container">
-      <h2>Que puede gestionar</h2>
+      <h2 data-animate>Que puede gestionar</h2>
       <ul class="features">
-        <li><span>✓</span> Reservas de mesa, hamaca o habitacion</li>
-        <li><span>✓</span> Preguntas sobre la carta, alergenos y precios</li>
-        <li><span>✓</span> Informacion de horarios, ubicacion y como llegar</li>
-        <li><span>✓</span> Lista de espera y confirmaciones automaticas</li>
-        <li><span>✓</span> Atencion en espanol, ingles, aleman y frances</li>
-        <li><span>✓</span> Control de stock y alertas de disponibilidad</li>
-        <li><span>✓</span> Eventos privados y peticiones especiales</li>
-        <li><span>✓</span> Integracion con WhatsApp, Telegram y web</li>
+        <li data-animate data-delay="0"><span>✓</span> Reservas de mesa, hamaca o habitacion</li>
+        <li data-animate data-delay="50"><span>✓</span> Preguntas sobre carta, alergenos y precios</li>
+        <li data-animate data-delay="100"><span>✓</span> Horarios, ubicacion y como llegar</li>
+        <li data-animate data-delay="150"><span>✓</span> Lista de espera y confirmaciones automaticas</li>
+        <li data-animate data-delay="200"><span>✓</span> Atencion en espanol, ingles, aleman y frances</li>
+        <li data-animate data-delay="250"><span>✓</span> Control de stock y alertas de disponibilidad</li>
+        <li data-animate data-delay="300"><span>✓</span> Eventos privados y peticiones especiales</li>
+        <li data-animate data-delay="350"><span>✓</span> Integracion con WhatsApp, Telegram y web</li>
       </ul>
-      <p class="features-note">Y lo que no este en esta lista, lo desarrollamos a medida.</p>
+      <p class="features-note" data-animate>Y lo que no este en esta lista, lo desarrollamos a medida.</p>
     </div>
   </section>
 
+  <!-- PRECIO -->
   <section class="precio">
     <div class="container">
-      <div class="precio-card">
+      <div class="precio-card" data-animate>
         <div class="precio-left">
           <h2>Un precio fijo.<br>Sin sorpresas.</h2>
           <p>Setup completo, configuracion personalizada, soporte continuo y todas las actualizaciones incluidas. Sin costes ocultos, sin permanencia.</p>
           <ul>
             <li>Configuracion inicial en 48 horas</li>
-            <li>Soporte directo conmigo (no con un call center)</li>
+            <li>Soporte directo conmigo, no con un call center</li>
             <li>Adaptaciones sin coste extra</li>
             <li>Cancelacion cuando quieras</li>
           </ul>
@@ -136,38 +140,39 @@
     </div>
   </section>
 
+  <!-- QUIEN SOY -->
   <section class="quien-soy">
     <div class="container">
-      <div class="bio">
-        <div class="bio-text">
-          <h2>Soy Leroy.</h2>
-          <p>Llevo 14 anos en hosteleria en Alemania, Austria, Espana y Argentina. Ahora trabajo como jefe de rango en Mallorca y como desarrollador especializado en sistemas de IA.</p>
-          <p>Construi Apuntao porque conozco el problema desde dentro. Se lo que se pierde cuando no puedes responder a tiempo. Y se como resolverlo.</p>
-          <p>Trabajo con pocos clientes, para poder hacerlo bien con cada uno.</p>
-          <a href="https://github.com/lroy-stack" target="_blank" class="link-github">github.com/lroy-stack</a>
-        </div>
+      <div class="bio" data-animate>
+        <h2>Soy Leroy.</h2>
+        <p>Llevo 14 anos en hosteleria en Alemania, Austria, Espana y Argentina. Ahora trabajo como jefe de rango en Mallorca y desarrollo sistemas de IA.</p>
+        <p>Construi Apuntao porque conozco el problema desde dentro. Se lo que se pierde cuando no puedes responder a tiempo. Y se como resolverlo.</p>
+        <p>Trabajo con pocos clientes, para hacerlo bien con cada uno.</p>
+        <a href="https://github.com/lroy-stack" target="_blank" class="link-github">→ github.com/lroy-stack</a>
       </div>
     </div>
   </section>
 
+  <!-- CONTACTO -->
   <section class="contacto" id="contacto">
     <div class="container">
-      <h2>Hablamos?</h2>
-      <p>Escribeme directamente. Sin formularios, sin comerciales. Si tu negocio encaja con lo que hago, lo sabremos en diez minutos.</p>
-      <div class="contacto-opciones">
+      <h2 data-animate>Hablamos?</h2>
+      <p data-animate>Escribeme directamente. Sin formularios, sin comerciales. Si tu negocio encaja con lo que hago, lo sabremos en diez minutos.</p>
+      <div class="contacto-opciones" data-animate>
         <a href="mailto:contacto@lr0y.dev" class="contacto-btn email">contacto@lr0y.dev</a>
-        <a href="https://wa.me/34152926770" class="contacto-btn whatsapp">WhatsApp</a>
+        <a href="https://wa.me/4915292606770" class="contacto-btn whatsapp">📱 WhatsApp</a>
       </div>
-      <p class="contacto-nota">Estoy en Mallorca. Puedo pasarme a hacer una demo en persona.</p>
+      <p class="contacto-nota" data-animate>Estoy en Mallorca. Puedo pasarme a hacer una demo en persona.</p>
     </div>
   </section>
 
   <footer>
     <div class="container">
       <span class="logo">apuntao<span>.</span></span>
-      <p>Asistentes de IA para hosteleria en Mallorca &mdash; Leroy Lowe</p>
+      <p>Asistentes de IA para hosteleria en Mallorca &mdash; Leroy Löwe</p>
     </div>
   </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
